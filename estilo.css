@@ -1,0 +1,538 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700;900&family=Train+One&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background:url(img/fondo.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.contenedor-seccion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+section{
+    width: 80vw;
+    background:#d4d4d4;
+    box-shadow: 0 0 25px 5px #303030;
+    position: relative;
+}
+
+#inicio .fila{
+    display: flex;
+    height: 80vh;
+    background: #fff;
+}
+#inicio .fila .col{
+    width: 50%;
+}
+#inicio .fila .info{
+    padding: 0 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+#inicio .fila .info .saludo{
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight:700;
+    letter-spacing: 3px;
+}
+#inicio .fila .info h1{
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    letter-spacing: 5px;
+}
+#inicio .fila .info h1 span{
+    font-family: 'train one';
+    color: #f5b42f;
+}
+#inicio .fila .presentacion{
+    background-color:#f5b42f;
+    width: fit-content;
+    padding: 0 10px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+#inicio .fila .info p{
+    color: #6b6b6b;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+#inicio .fila .info .boton{
+    width: fit-content;
+    border: none;
+    background-color: #f5b42f;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: .3s;
+}
+#inicio .fila .info .boton:hover{
+    background-color: #303030;
+    color: #f5b42f;
+}
+#inicio .fila .col .contenedor-img{
+    background-image: url(img/foto.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 100%;
+    filter: grayscale();
+}
+
+/* ESTILOS GENERRALES DEL PANEL*/
+section .panel{
+    position: relative;
+    margin-left: 220px;
+    height: 80vh;
+    padding: 30px 90px 40px 50px;
+}
+/* ESTILOS GENERRALES DEL MENU IZQUIERDO*/
+section .menu{
+    position: absolute;
+    width: 210px;
+    background-color: #f5b42f;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+section .menu .contenedor-img{
+    width: 100%;
+}
+section .menu .contenedor-img img{
+    width: 100%;
+    filter: grayscale();
+}
+section nav .opciones{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    height: 100%;
+}
+section nav .linea{
+    height: 15px;
+    border-right: 1px  dotted #303030;
+}
+section nav .opciones a{
+    display: block;
+    text-decoration: none;
+    color: #303030;
+    font-weight: bold;
+    font-size: 16px;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+section nav .opciones a:hover{
+    color: #fff;
+}
+.seleccionada{
+    color: #fff !important;
+}
+
+/* SECCION SOBRE MI */
+#sobremi .panel{
+    color: #303030;
+}
+#sobremi .panel .titulo-panel{
+    font-size: 4rem;
+    text-align: center;
+    border: 2px dotted #a1a1a1;
+    letter-spacing: 7px;
+}
+#sobremi .panel .presentacion{
+    font-size: 28px;
+    margin: 20px 0;
+}
+#sobremi .panel .presentacion .nombre{
+    font-weight: bold;
+}
+#sobremi .panel .descripcion{
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+#sobremi .panel .fila{
+    display: flex;
+}
+#sobremi .panel .fila .datos{
+    width: 60%;
+}
+#sobremi .panel .fila .datos .fila-numeros{
+    display: flex;
+    background-color: #000;
+    color: #f5b42f;
+    text-align: center;
+}
+#sobremi .panel .fila .datos .fila-numeros .numero{
+    display: block;
+    font-size: 2.1rem;
+    font-weight: bold;
+}
+#sobremi .panel .fila .datos .fila-numeros .texto{
+    color: #fff;
+    font-size: 16px;
+}
+#sobremi .panel .fila .datos .fila-numeros .col{
+    width: 50%;
+    padding: 25px;
+}
+#sobremi .panel .fila .servicios{
+    margin-left: 20px;
+    width: 40%;
+}
+#sobremi .panel .fila .servicios h2{
+    font-size: 20px;
+}
+#sobremi .panel .fila .servicios i{
+    font-size: 20px;
+}
+#sobremi .panel .fila .servicios .servicio{
+    display: flex;
+    margin: 15px 0;
+}
+#sobremi .panel .fila .servicios .servicio .info{
+    padding-left: 20px;
+}
+#sobremi .panel .fila .servicios .servicio .info h2{
+    font-size: 14px;
+}
+
+#sobremi .panel .fila .servicios .servicio .info p{
+    font-size: 11px;
+   text-align: justify;
+}
+
+/* sección curiculum */
+#curriculum .panel{
+    color: #303030;
+}
+#curriculum .panel .titulo-panel{
+    font-size: 4rem;
+    text-align: center;
+    border: 2px dotted #a1a1a1;
+    letter-spacing: 7px;
+}
+#curriculum .panel h3{
+    margin: 20px 0;
+}
+#curriculum .panel .fila{
+    display: flex;
+    justify-content:space-between;
+    margin-bottom: 20px;
+}
+#curriculum .panel .fila .col{
+    width: 28%;
+}
+#curriculum .panel .fila .col .fecha{
+    background-color: #f5b42f;
+    color: #fff;
+    display: inline-block;
+    padding: 0 10px;
+    border-radius: 20px;
+    margin-bottom: 7px;
+}
+#curriculum .panel .fila .col p{
+    font-size: 14px;
+
+}
+#curriculum .panel hr{
+    margin: 20px 0;
+    border: none;
+    border-bottom: 2px dotted #a1a1a1;
+}
+
+/* SECCION PORFOLIO */
+#porfolio .panel{
+    color: #303030;
+}
+#porfolio .panel .titulo-panel{
+    font-size: 4rem;
+    text-align: center;
+    border: 2px dotted #a1a1a1;
+    letter-spacing: 7px;
+}
+#porfolio .panel nav{
+    text-align: center;
+}
+#porfolio .panel nav a{
+   text-decoration: none;
+   display: inline-block;
+   font-weight: bold;
+   font-size: 16px;
+   color: #303030;
+   margin: 10px 20px;
+}
+#porfolio .galeria .item img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+#porfolio .galeria{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    grid-gap:30px;
+    grid-row-gap: 10px;
+}
+#porfolio .galeria .item{
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #8d8d8d ;
+    border-radius: 10px;
+}
+#porfolio .galeria .item .info{
+    position: absolute;
+    top: -100%;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8 );
+    width: 100%;
+    padding: 20px;
+    opacity: 0;
+    transition: .3s;
+}
+#porfolio .galeria .item .info h3{
+    color: #fff;
+    margin-bottom: 20px;
+}
+#porfolio .galeria .item:hover .info{
+    opacity: 1;
+    top: 0;
+}
+
+/* SECCION TESTIMONIOS */
+#testimonios .panel{
+    color: #303030;
+}
+#testimonios .panel .titulo-panel{
+    font-size: 4rem;
+    text-align: center;
+    border: 2px dotted #a1a1a1;
+    letter-spacing: 7px;
+}
+#testimonios .panel .fila{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+#testimonios .panel .col{
+    width: 47%;
+    background-color: #000;
+    display: flex;
+    padding: 15px;
+}
+#testimonios .panel .col .izquierda{
+    width: 40%;
+}
+#testimonios .panel .col .izquierda .estrellas{
+    margin: 10px 0;
+}
+#testimonios .panel .col .izquierda .estrellas i{
+   color: #f5b42f;
+   margin: 5px;
+   font-size: 10px;
+}
+#testimonios .panel .col .derecha{
+    width: 60%;
+    margin-left: 15px;
+}
+
+#testimonios .panel .col .derecha .nombre{
+    color: #f5b42f;
+}
+#testimonios .panel .col .derecha p{
+    color:#a1a1a1;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+#testimonios .panel .col .derecha .fecha{
+    display: block;
+    text-align: right;
+    color: #fff;
+}
+#testimonios .panel .col .contenedor-img{
+    width: 100%;
+}
+#testimonios .panel .col .contenedor-img img{
+    width: 100%;
+}
+/* SECCION CONTACTO */
+#contacto .panel{
+    color: #303030;
+}
+#contacto .panel .titulo-panel{
+    font-size: 4rem;
+    text-align: center;
+    border: 2px dotted #a1a1a1;
+    letter-spacing: 7px;
+}
+#contacto .panel .presentacion{
+    font-size: 28px;
+    margin: 20px 0;
+}
+#contacto .panel .fila{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px 0;
+}
+#contacto .panel .fila .col{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    padding: 30px 0;
+}
+#contacto .panel .fila .col i{
+   font-size: 6.5rem;
+
+}
+#contacto .panel .fila .col .info{
+    margin-left: 30px;
+}
+#contacto .panel .fila .col .info h3{
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+#contacto .panel h2{
+    text-align: center;
+}
+/* menu lateral responsive */
+.nav-responsive{
+    z-index: 99;
+    position: fixed;
+    right: 11vw;
+    background-color: #f5b42f;
+    border-radius: 30px;
+    display: none;
+}
+.nav-responsive a{
+    display: block;
+    padding: 10px;
+    color: #303030;
+}
+@media screen  and (max-width:1370px){
+    #porfolio .galeria{
+        grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+    }
+}
+@media screen  and (max-width:1340px){
+    .contenedor-seccion{
+        height:auto !important;
+        margin-top: 50px;
+    }
+    section .panel{
+        height: 80%;
+    }
+    #contacto .panel .fila .col i{
+        font-size: 3.5rem;
+     
+    }
+}
+@media screen  and (max-width:1100px){
+    section .menu{
+        display: none;
+    }
+    section .panel{
+        margin-left: 0px;
+
+    }
+    #nav-responsive{
+        display: block;
+    }
+}
+@media screen  and (max-width:800px){
+    section{
+        width: 100%;
+        margin: 0 10px;
+    }
+    .nav-responsive{
+        right: 20px;
+
+    }
+    .panel .titulo-panel{
+        font-size: 2.5rem !important;
+    }
+    #inicio .fila{
+        display: block;
+        height: auto;
+        text-align: center;
+    }
+    #inicio .fila .col{
+        width: 100%;
+        padding: 20px 0;
+    }
+    #inicio .fila .col .presentacion{
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    #inicio .fila .info .boton{
+        margin: auto;
+    }
+    #inicio .fila .col p{
+        width: 80%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    #inicio .fila .col .contenedor-img{
+        height: 200px;
+        width: 200px;
+        margin: auto;
+        border-radius: 50%;
+    }
+    #sobremi{
+        text-align: center;
+    }
+    #sobremi .panel .fila{
+        display: block;
+    }
+    #sobremi .panel .fila .datos{
+        width: 100%;
+
+    }
+    #sobremi .panel .fila .servicios{
+        width: 100%;
+        padding: 20px;
+        margin: 0;
+    }
+
+    #curriculum .panel .fila{
+        display: block;
+    }
+    #curriculum .panel .fila .col{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    #porfolio .galeria{
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    }
+    #porfolio .panel nav a{
+        margin: 10px 5px !important;
+    }
+    #testimonios .panel .fila{
+        display: block;
+        margin: 0;
+    }
+    #testimonios .panel .fila .col{
+        width: 100%;
+    }
+    #contacto .panel .fila{
+        display: block;
+    }
+    #contacto .panel .fila .col{
+        width: 70%;
+        margin: auto;
+    }
+}
+

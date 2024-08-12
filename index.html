@@ -1,71 +1,476 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Evolución Digital</title>
-    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="estilo.css">
+    <title>Porfolio Julieta</title>
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <img src="Imagenes/logo.png" alt="Logo de Evolución Digital" class="logo">
-            <h1 class="site-title">Evolución Digital</h1>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="index.html" class="active">Inicio</a></li>
-                <li><a href="acerca-de-nosotros.html">Acerca de nosotros</a></li>
-                <li><a href="serv.html">Servicios</a></li>
-                <li><a href="preguntas.html">Preguntas frecuentes</a></li>
-                <li><a href="testimonios.html">Testimonios</a></li>
-                <li><a href="contactos.html">Contáctenos</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section class="fondo">
-            <img src="https://media.giphy.com/media/k3nTFA806T7KeORIhT/giphy.gif" alt="Fondo animado" class="fondo-image">
-            <div class="fondo-content">
-                <h1>Consultoría Digital</h1>
-                <p>Soluciones TI</p>
-            </div>
-        </section>
+    <!-- Menu responsive -->
+    <div class="nav-responsive" id="nav-responsive">
+        <a href="#inicio" id="nav-inicio">
+            <i class="fa-solid fa-house"></i>
+        </a>
+        <a href="#sobremi" id="nav-sobremi">
+            <i class="fa-solid fa-user"></i>
+        </a>
+        <a href="#curriculum" id="nav-curriculum">
+            <i class="fa-solid fa-graduation-cap"></i>
+        </a>
+        <a href="#porfolio" id="nav-porfolio">
+            <i class="fa-solid fa-briefcase"></i>
+        </a>
+        <a href="#testimonios" id="nav-testimonios">
+            <i class="fa-solid fa-comment"></i>
+        </a>
+        <a href="#contacto" id="nav-contacto">
+            <i class="fa-solid fa-envelope"></i>
+        </a>
+    </div>
+    
+    <!-- sección inicio -->
+    <div class="contenedor-seccion" id="inicio">
 
-        <section class="purple-fondo">
-            <div class="purple-contenido">
-                <div class="bottom-message">
-                    <img src="https://i.postimg.cc/6p5B4fsp/img1.png" alt="Imagen 1" class="side-image">
-                    <h2>Negocios digitales, predecibles y rentables</h2>
-                    <p>No somos una simple agencia, somos la Consultoría de los emprendedores digitales.</p>
+        <section>
+            <div class="fila">
+                <div class="col info">
+                    <span class="saludo">Hola!</span>
+                    <h1>Soy <span>Julieta</span></h1>
+                    <span class="presentacion">Diseñadora Gráfica - Fotógrafa</span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium voluptatem esse ullam id consequuntur, tempore et similique ratione distinctio soluta voluptates officiis a explicabo optio aliquid eligendi, quidem corporis minus!</p>
+                    <a href="#sobremi" class="boton">Mas sobre mí</a>
+                </div>
+                <div class="col">
+                    <div class="contenedor-img">
+                       
+                    </div>
                 </div>
             </div>
         </section>
-        <section class="image-section">
-            <img src="https://i.postimg.cc/xdBQ7rXX/img2.jpg" alt="Imagen 2" class="image">
+    </div>
+
+    <!-- sección sobre mi -->
+    <div class="contenedor-seccion" id="sobremi">
+        <section>
+            <nav class="menu">
+                <div class="contenedor-img">
+                    <img src="img/foto.jpg" alt="">
+                </div>
+                <div class="opciones">
+                    <div class="linea"></div>
+                    <a href="#inicio">Inicio</a>
+                    <div class="linea"></div>
+                    <a href="#sobremi" class="seleccionada">Sobre mí</a>
+                    <div class="linea"></div>
+                    <a href="#curriculum">Currriculm</a>
+                    <div class="linea"></div>
+                    <a href="#porfolio">Porfolio</a>
+                    <div class="linea"></div>
+                    <a href="#testimonios">Testimonios</a>
+                    <div class="linea"></div>
+                    <a href="#contacto">Contacto</a>
+                    <div class="linea"></div>
+                </div>
+            </nav>
+            <div class="panel">
+                <h2 class="titulo-panel">SOBRE MI</h2>
+                <p class="presentacion">Soy <span class="nombre">Julieta Smith,</span>  Diseñadora Gráfica / Fotógrafa</p>
+                <p class="descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit incidunt, repellendus dolorem voluptatibus aliquid atque accusamus consequuntur asperiores nostrum, quidem repellat exercitationem dolor excepturi placeat odit. At cumque sapiente magni.</p>
+                <div class="fila">
+                    <div class="datos">
+                        <div class="fila-numeros">
+                            <div class="col">
+                                <span class="numero">+<span id="anios">15</span></span>
+                                <span class="texto">Años de Experiencia</span>
+                            </div>
+                            <div class="col">
+                                <span class="numero">+<span id="proyectos">350</span></span>
+                                <span class="texto">Proyectos Realizados</span>
+                            </div>
+                        </div>
+                        <div class="fila-numeros">
+                            <div class="col">
+                                <span class="numero">+<span id="clientes">200</span></span>
+                                <span class="texto">Clientes Felices</span>
+                            </div>
+                            <div class="col">
+                                <span class="numero"><span id="seguidores">45</span>K</span>
+                                <span class="texto">Seguidores</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="servicios">
+                        <h2>¿Qué puedo hacer?</h2>
+                        <div class="servicio">
+                            <i class="fa-solid fa-check"></i>
+                            
+                            <div class="info">
+                                <h2>Diseño gráfico</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt nisi cupiditate itaque.</p>
+                            </div>
+                        </div>
+                        <div class="servicio">
+                            <i class="fa-solid fa-check"></i>
+                            <div class="info">
+                                <h2>Sitios Web</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt nisi cupiditate itaque.</p>
+                            </div>
+                        </div>
+                        <div class="servicio">
+                            <i class="fa-solid fa-check"></i>
+                            <div class="info">
+                                <h2>Fotografía</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt nisi cupiditate itaque.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
-    </main>
-    <footer>
-        <div class="footer-content">
-            <div class="footer-logo-container">
-                <img src="https://i.postimg.cc/Wb724fHy/logo.png" alt="Logo de Evolución Digital" class="logo">
-                <span class="footer-EvolucionDigital">Evolución Digital</span>
+    </div>
+
+    <!-- sección Curriculum -->
+    <div class="contenedor-seccion" id="curriculum">
+        <section>
+            <nav class="menu">
+                <div class="contenedor-img">
+                    <img src="img/foto.jpg" alt="">
+                </div>
+                <div class="opciones">
+                    <div class="linea"></div>
+                    <a href="#inicio">Inicio</a>
+                    <div class="linea"></div>
+                    <a href="#sobremi">Sobre mí</a>
+                    <div class="linea"></div>
+                    <a href="#curriculum" class="seleccionada">Currriculm</a>
+                    <div class="linea"></div>
+                    <a href="#porfolio">Porfolio</a>
+                    <div class="linea"></div>
+                    <a href="#testimonios">Testimonios</a>
+                    <div class="linea"></div>
+                    <a href="#contacto">Contacto</a>
+                    <div class="linea"></div>
+                </div>
+            </nav>
+            <div class="panel">
+                <h2 class="titulo-panel">CURRICULUM</h2>
+                <h3>EDUCACIÓN</h3>
+                <div class="fila">
+                    <div class="col">
+                        <span class="fecha">2005 - 2008</span>
+                        <h4>Analista en Sistemas</h4>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero blanditiis tenetur reprehenderit possimus. </p>
+                    </div>
+                    <div class="col">
+                        <span class="fecha">2005 - 2008</span>
+                        <h4>Analista en Sistemas</h4>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero blanditiis tenetur reprehenderit possimus. </p>
+                    </div>
+                    <div class="col">
+                        <span class="fecha">2005 - 2008</span>
+                        <h4>Analista en Sistemas</h4>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero blanditiis tenetur reprehenderit possimus. </p>
+                    </div>
+                </div>
+                <hr>
+                <h3>EXPERIENCIA</h3>
+                <div class="fila">
+                    <div class="col">
+                        <span class="fecha">2015 - 2020</span>
+                        <h4>Analista en Sistemas</h4>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero blanditiis tenetur reprehenderit possimus. </p>
+                    </div>
+                    <div class="col">
+                        <span class="fecha">2015 - 2020</span>
+                        <h4>Analista en Sistemas</h4>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero blanditiis tenetur reprehenderit possimus. </p>
+                    </div>
+                    <div class="col">
+                        <span class="fecha">2015 - 2020</span>
+                        <h4>Analista en Sistemas</h4>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero blanditiis tenetur reprehenderit possimus. </p>
+                    </div>
+                </div>
             </div>
-            <div class="footer-rights">
-                <span>ESPE © 2024 Grupo 5. Todos los derechos reservados.</span>
+        </section>
+    </div>
+
+    <!-- sección Porfolio -->
+    <div class="contenedor-seccion" id="porfolio">
+        <section>
+            <nav class="menu">
+                <div class="contenedor-img">
+                    <img src="img/foto.jpg" alt="">
+                </div>
+                <div class="opciones">
+                    <div class="linea"></div>
+                    <a href="#inicio">Inicio</a>
+                    <div class="linea"></div>
+                    <a href="#sobremi">Sobre mí</a>
+                    <div class="linea"></div>
+                    <a href="#curriculum">Currriculm</a>
+                    <div class="linea"></div>
+                    <a href="#porfolio" class="seleccionada">Porfolio</a>
+                    <div class="linea"></div>
+                    <a href="#testimonios">Testimonios</a>
+                    <div class="linea"></div>
+                    <a href="#contacto">Contacto</a>
+                    <div class="linea"></div>
+                </div>
+            </nav>
+            <div class="panel">
+                <h2 class="titulo-panel">PORFOLIO</h2>
+                <nav>
+                    <a href="javascript:void(0)" class="borde" id="item" onclick="verCategoria('item')">Todos</a>
+                    <a href="javascript:void(0)" class="" id="grafica" onclick="verCategoria('grafica')">Diseño Gráfico</a>
+                    <a href="javascript:void(0)" class="" id="web" onclick="verCategoria('web')">Diseño Web</a>
+                    <a href="javascript:void(0)" class="" id="fotografia" onclick="verCategoria('fotografia')">Fotografía</a>
+                </nav>
+
+                <div class="galeria">
+                    <div class="item grafica">
+                        <img src="img/trabajo1.png" alt="">
+                        <div class="info">
+                            <h3>Titulo del Trabajo</h3>
+                        </div>
+                    </div>
+                    <div class="item fotografia">
+                        <img src="img/trabajo2.jpg" alt="">
+                        <div class="info">
+                            <h3>Titulo del Trabajo</h3>
+                        </div>
+                    </div>
+                    <div class="item web">
+                        <img src="img/trabajo3.png" alt="">
+                        <div class="info">
+                            <h3>Titulo del Trabajo</h3>
+                        </div>
+                    </div>
+                    <div class="item fotografia">
+                        <img src="img/trabajo4.jpg" alt="">
+                        <div class="info">
+                            <h3>Titulo del Trabajo</h3>
+                        </div>
+                    </div>
+                    <div class="item grafica">
+                        <img src="img/trabajo5.png" alt="">
+                        <div class="info">
+                            <h3>Titulo del Trabajo</h3>
+                        </div>
+                    </div>
+                    <div class="item fotografia">
+                        <img src="img/trabajo6.jpg" alt="">
+                        <div class="info">
+                            <h3>Titulo del Trabajo</h3>
+                        </div>
+                    </div>
+                    <div class="item web">
+                        <img src="img/trabajo7.png" alt="">
+                        <div class="info">
+                            <h3>Titulo del Trabajo</h3>
+                        </div>
+                    </div>
+                    <div class="item grafica">
+                        <img src="img/trabajo8.png" alt="">
+                        <div class="info">
+                            <h3>Titulo del Trabajo</h3>
+                        </div>
+                    </div>
+                    <div class="item web">
+                        <img src="img/trabajo9.png" alt="">
+                        <div class="info">
+                            <h3>Titulo del Trabajo</h3>
+                        </div>
+                    </div>
+                    <div class="item fotografia">
+                        <img src="img/trabajo10.jpg" alt="">
+                        <div class="info">
+                            <h3>Titulo del Trabajo</h3>
+                        </div>
+                    </div>
+                    <div class="item web">
+                        <img src="img/trabajo11.png" alt="">
+                        <div class="info">
+                            <h3>Titulo del Trabajo</h3>
+                        </div>
+                    </div>
+                    <div class="item grafica">
+                        <img src="img/trabajo12.png" alt="">
+                        <div class="info">
+                            <h3>Titulo del Trabajo</h3>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-            <div class="footer-social">
-                <span>Síguenos en:</span>
-                <a href="https://www.instagram.com/tuusuario" target="_blank"><img src="https://i.postimg.cc/3Jh8YHnp/IN.jpg" alt="Instagram"></a>
-                <a href="https://twitter.com/tuusuario" target="_blank"><img src="https://i.postimg.cc/zGt8CH5S/TW.jpg" alt="Twitter"></a>
-                <a href="https://www.pinterest.com/tuusuario" target="_blank"><img src="https://i.postimg.cc/fbVZBWR4/PIN.png" alt="Pinterest"></a>
-                <a href="https://www.facebook.com/profile.php?id=100092142912052" target="_blank"><img src="https://i.postimg.cc/NGms307B/FB.png" alt="Facebook"></a>
+        </section>
+    </div>
+
+    <!-- sección testimonios -->
+    <div class="contenedor-seccion" id="testimonios">
+        <section>
+            <nav class="menu">
+                <div class="contenedor-img">
+                    <img src="img/foto.jpg" alt="">
+                </div>
+                <div class="opciones">
+                    <div class="linea"></div>
+                    <a href="#inicio">Inicio</a>
+                    <div class="linea"></div>
+                    <a href="#sobremi">Sobre mí</a>
+                    <div class="linea"></div>
+                    <a href="#curriculum">Currriculm</a>
+                    <div class="linea"></div>
+                    <a href="#porfolio">Porfolio</a>
+                    <div class="linea"></div>
+                    <a href="#testimonios" class="seleccionada">Testimonios</a>
+                    <div class="linea"></div>
+                    <a href="#contacto">Contacto</a>
+                    <div class="linea"></div>
+                </div>
+            </nav>
+            <div class="panel">
+                <h2 class="titulo-panel">TESTIMONIOS</h2>
+                <div class="fila">
+                    <div class="col">
+                        <div class="izquierda">
+                            <div class="contenedor-img">
+                                <img src="img/testimonio1.png" alt="">
+                            </div>
+                            <div class="estrellas">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="derecha">
+                            <h3 class="nombre">Mario Sandoval</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                            <span class="fecha">12-12-2023</span>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="izquierda">
+                            <div class="contenedor-img">
+                                <img src="img/testimonio2.png" alt="">
+                            </div>
+                            <div class="estrellas">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="derecha">
+                            <h3 class="nombre">María Quiroga</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                            <span class="fecha">12-12-2023</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="fila">
+                    <div class="col">
+                        <div class="izquierda">
+                            <div class="contenedor-img">
+                                <img src="img/testimonio3.png" alt="">
+                            </div>
+                            <div class="estrellas">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="derecha">
+                            <h3 class="nombre">Betina Randi</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                            <span class="fecha">12-12-2023</span>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="izquierda">
+                            <div class="contenedor-img">
+                                <img src="img/testimonio4.png" alt="">
+                            </div>
+                            <div class="estrellas">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="derecha">
+                            <h3 class="nombre">Marcos Moure</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                            <span class="fecha">12-12-2023</span>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-            
-        </div>
-    </footer>
-     <!-- Botón de volver al inicio -->
-     <button onclick="scrollToTop()" id="backToTopBtn" title="Volver al inicio">↑</button>
-     <script src="JS/script.js"></script>
+        </section>
+    </div>
+
+    <!-- sección contacto -->
+    <div class="contenedor-seccion" id="contacto">
+        <section>
+            <nav class="menu">
+                <div class="contenedor-img">
+                    <img src="img/foto.jpg" alt="">
+                </div>
+                <div class="opciones">
+                    <div class="linea"></div>
+                    <a href="#inicio">Inicio</a>
+                    <div class="linea"></div>
+                    <a href="#sobremi">Sobre mí</a>
+                    <div class="linea"></div>
+                    <a href="#curriculum">Currriculm</a>
+                    <div class="linea"></div>
+                    <a href="#porfolio">Porfolio</a>
+                    <div class="linea"></div>
+                    <a href="#testimonios">Testimonios</a>
+                    <div class="linea"></div>
+                    <a href="#contacto" class="seleccionada">Contacto</a>
+                    <div class="linea"></div>
+                </div>
+            </nav>
+            <div class="panel">
+                <h2 class="titulo-panel">CONTACTO</h2>
+                <p class="presentacion">Comunicate conmigo <strong>ahora!!</strong> </p>
+                <p class="descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit incidunt, repellendus dolorem voluptatibus aliquid atque accusamus consequuntur asperiores nostrum, quidem repellat exercitationem.</p>
+                <div class="fila">
+                    <div class="col">
+                        <div class="img">
+                            <i class="fa-solid fa-desktop"></i>
+                        </div>
+                        <div class="info">
+                            <h3>www.julieta.com</h3>
+                            <h3>julieta@gmail.com</h3>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="img">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div class="info">
+                            <h3>2665 - 776688</h3>
+                            <h3>2665 - 344334</h3>
+                        </div>
+                    </div>  
+                </div>
+                <h2>GRACIAS POR LA PACIENCIA!</h2>
+            </div>
+        </section>
+    </div>
+
+    <script src="app.js"></script>
 </body>
 </html>
